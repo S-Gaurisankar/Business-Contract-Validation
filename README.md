@@ -11,6 +11,7 @@ This project aims to compare two business contract PDF files and highlight the d
 ## Directory Structure
 
 BusinessContractValidation/
+
 │
 ├── app.py
 ├── requirements.txt
