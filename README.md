@@ -8,19 +8,6 @@ This project aims to compare two business contract PDF files and highlight the d
 - Highlight differences between the two PDF files.
 - Download the highlighted differences PDF.
 
-## Directory Structure
-
-BusinessContractValidation/
-
-│
-├── app.py
-├── requirements.txt
-├── scripts/
-│ ├── init.py
-│ ├── compare.py
-│ └── utils.py
-
-
 ## Installation
 
 1. Clone the repository:
@@ -52,7 +39,7 @@ BusinessContractValidation/
 ## Configuration
 Modify the absolute path in app.py (line 5) to reflect the path of scripts in your environment. 
 
-## Usage
+## Usage (Without docker)
 
 1. Run the Streamlit app:
     ```bash
@@ -67,6 +54,16 @@ Modify the absolute path in app.py (line 5) to reflect the path of scripts in yo
 
 5. Download the highlighted differences PDF.
 
+## Run the Docker Container
 
+    The docker image is available at 'https://hub.docker.com/repository/docker/gaurisankar/bcv/general'
+
+    ```bash
+    docker build -t business-contract-validation .
+    ```
+
+    ```bash
+    docker run -p 8501:8501 business-contract-validation
+    ```
 
 
