@@ -56,11 +56,14 @@ Modify the absolute path in app.py (line 5) to reflect the path of scripts in yo
 
 ## Run the Docker Container
 
-    The docker image is available at 'https://hub.docker.com/repository/docker/gaurisankar/bcv/general'
+The docker image is available at 'https://hub.docker.com/repository/docker/gaurisankar/bcv/general'
+
+1) Build the container 
 
     ```bash
     docker build -t business-contract-validation .
     ```
+2) Run the container
 
     ```bash
     docker run -p 8501:8501 business-contract-validation
